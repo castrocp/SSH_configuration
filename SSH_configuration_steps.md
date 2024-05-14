@@ -41,3 +41,22 @@ Now you should be able to log in to the server, without entering a password (sin
 
 To test it, log in to the server, and then type:
 `ssh -T git@github.com`
+
+### Set up proxyjump to get from bastion to another server
+In my case, I want to be able to SSH to Clover without having to first SSH into Foxglove.
+
+Edit `~/.ssh/config` file:
+
+```
+#Bastion Host
+Host foxglove [this is just a nickname for the server]
+	HostName [IP address or actual name of host server]
+	ForwardAgent yes
+
+#Remote Host
+Host clover
+	HostName [IP address]
+	ProxyJump foxglove [this is the nickname of the bastion host]
+```
+
+
