@@ -1,5 +1,5 @@
 ### These are the steps for using SSH keys for accessing and using GitHub on remote servers
-As of 5/14/24, you can follow the steps in this documentation:
+As of 5/14/24, you can follow the steps in this documentation:  
 https://docs.github.com/en/enterprise-cloud@latest/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 ### I already had the public/private SSH key pair in my .ssh directory on my local computer, so I skipped the "Generating new SSH key" step
@@ -8,7 +8,7 @@ If you're going to use the same keys for different computers (i.e. I've set up t
 
 ### Create the config file
 
-If it doesn't exist, create a file at '~/,ssh/config`
+If it doesn't exist, create a file at `~/,ssh/config`
 
 For the SSH keys to work with GitHub, make sure this is in the config file:
 ```
