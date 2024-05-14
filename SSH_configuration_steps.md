@@ -59,4 +59,4 @@ Host clover
 	ProxyJump foxglove [this is the nickname of the bastion host]
 ```
 
-
+Now I should be able to just type `ssh foxglove` or `ssh clover` from my local computer and be logged in without entering a password.
